@@ -1,0 +1,24 @@
+# Empty list applies to all worlds; use ['world_pvp'] to restrict.
+pvp-worlds: []
+prevent-mob-damage-to-players: true
+prevent-natural-monster-spawning: true
+coins-per-kill: 10
+minimum-bounty: 25
+killstreak-announcements: [5, 10, 20]
+streak-rewards:
+  '5': 50
+  '10': 150
+  '20': 400
+# Change to actual kit names configured in PlayerKits2.
+kits: [Warrior, Archer, Tank, Assassin]
+# Change if your PlayerKits2 command differs. Executed as the player.
+kit-command: 'kit %kit%'
+
+# Sound played when you kill another player. Your choice is saved in data.yml.
+death-sounds:
+  enabled: true
+  default: WITHER
+  volume: 0.8
+  pitch: 1.0
+  # false = killer only; true = everyone near victim
+  play-to-nearby: false

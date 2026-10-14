@@ -1,0 +1,51 @@
+name: UnstableSharksPvP
+version: '4.0.0'
+main: com.unstablesharks.pvp.UnstableSharksPvP
+api-version: '1.21.11'
+author: UnstableSharks
+softdepend: [LuckPerms, PlayerKits, PlaceholderAPI, TAB, CombatLogX, WorldGuard]
+commands:
+  pvpsettings:
+    description: Open PvP settings GUI
+    permission: unstablesharks.settings
+  settingsitem:
+    description: Give yourself a settings compass
+    permission: unstablesharks.settings
+  pvpstats:
+    description: View PvP stats
+    permission: unstablesharks.pvpstats
+  pvptop:
+    description: Top 10 killers
+    permission: unstablesharks.pvptop
+  pvpkits:
+    description: Open PlayerKits2 kit selector
+    permission: unstablesharks.pvpkits
+  pvpcoins:
+    description: View PvP coins
+    permission: unstablesharks.pvpcoins
+  bounty:
+    description: Place a bounty using PvP coins
+    permission: unstablesharks.bounty
+  deathsounds:
+    description: Select and save your kill death sound
+    permission: unstablesharks.deathsounds
+  uspvp:
+    description: Reload plugin config
+    permission: unstablesharks.admin
+permissions:
+  unstablesharks.settings:
+    default: true
+  unstablesharks.pvpstats:
+    default: true
+  unstablesharks.pvptop:
+    default: true
+  unstablesharks.pvpkits:
+    default: true
+  unstablesharks.pvpcoins:
+    default: true
+  unstablesharks.bounty:
+    default: true
+  unstablesharks.deathsounds:
+    default: true
+  unstablesharks.admin:
+    default: op
